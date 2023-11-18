@@ -551,7 +551,7 @@
 }
 
 .duration_300 {
-    transition: 300ms linear;
+    transition: 500ms linear;
 }
 
 .pointer_event_none {
