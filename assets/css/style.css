@@ -682,6 +682,10 @@
     padding: 10px 11px 24px 13px;
 }
 
+.w-70 {
+    width: 70%;
+}
+
 
 .overflow_hidden {
     overflow: hidden;
@@ -782,6 +786,7 @@
     }
 }
 
+
 @media (min-width:320px) {
     .check-box {
         max-width: 900px;
@@ -803,6 +808,10 @@
 
     .w-sm-50 {
         width: 50%;
+    }
+
+    .pt-sm-48 {
+        padding-top: 48px;
     }
 }
 
@@ -958,6 +967,10 @@
         background: var(--white);
         right: -8%;
         top: 8%;
+    }
+
+    .d-md-block {
+        display: block !important;
     }
 
 }
