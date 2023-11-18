@@ -178,7 +178,8 @@
     position: relative;
 }
 
-.nav-links::after {
+/* 
+ .nav-links::after {
     content: '';
     position: absolute;
     height: 2px;
@@ -192,10 +193,10 @@
 
 .nav-links:hover::after {
     width: 100%;
-}
+} */
 
 .icon:hover {
-    transform: translateY(-14%);
+    transform: translateY(-30%);
     transition: 500ms linear;
 }
 
@@ -341,6 +342,11 @@
     width: 100%;
 }
 
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .image {
     Width: 792px;
     Height: 500px;
@@ -354,14 +360,20 @@
 
 .box-2:hover {
     background-color: var(--blue);
+    transition: 500ms linear;
+    transform: scale(1.1);
 }
 
 .box-2:hover h2 {
     color: var(--white);
+    transition: 500ms linear;
+    transform: scale(1.1);
 }
 
 .box-2:hover p {
     color: var(--white);
+    transition: 500ms linear;
+    transform: scale(1.1);
 }
 
 .border-transparent {
@@ -606,6 +618,7 @@
     border-radius: 50%;
     background-color: var(--blue);
     border: none;
+    display: none;
 }
 
 .pos-fixed {
@@ -626,6 +639,10 @@
 
 .text-line {
     position: relative;
+}
+
+.nav-links:hover {
+    -webkit-text-stroke: 0.5px white;
 }
 
 
@@ -680,6 +697,14 @@
     background: var(--white);
     box-shadow: 2px 9px 32px 0px rgba(0, 0, 0, 0.06);
     padding: 10px 11px 24px 13px;
+}
+
+.card:hover {
+    box-shadow: none;
+    transition: 500ms linear;
+    transform: scale(1.1);
+
+
 }
 
 .w-70 {
@@ -788,10 +813,16 @@
 
 
 @media (min-width:320px) {
+    .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .check-box {
         max-width: 900px;
-        height: 284px;
-        border-radius: 100px;
+        height: 315px;
+        border-radius: 75px;
         background: rgba(44, 73, 254, 0.74);
     }
 
@@ -801,8 +832,8 @@
 
     }
 
-    .mt-38 {
-        margin-top: 38px;
+    .mt-22 {
+        margin-top: 22px;
 
     }
 
@@ -816,8 +847,14 @@
 }
 
 @media (min-width:576px) {
-    .col-sm-6 {
+    /* .col-sm-6 {
         width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    } */
+
+    .col-sm-4 {
+        width: 33.33%;
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -1151,6 +1188,12 @@
     .pb-160 {
         padding-bottom: 160px;
     }
+
+    .d-lg-none {
+        display: none !important;
+    }
+
+
 }
 
 @media (min-width:1200px) {
